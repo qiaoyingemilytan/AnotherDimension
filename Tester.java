@@ -21,5 +21,6 @@ public class Tester{
     System.out.println(ArrayOps.largest(testerArray));
     System.out.println(arrToString(ArrayOps.sumRows(tester2dArray)));
     System.out.println(arrToString(ArrayOps.largestInRows(tester2dArray)));
+    System.out.println(ArrayOps.sum(tester2dArray));
   }
 }
