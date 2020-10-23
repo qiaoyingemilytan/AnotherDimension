@@ -6,4 +6,15 @@ public class ArrayOps{
     }
     return total;
   }
+
+  public static int largest(int[] arr){
+    int greatest = 0;
+    for(int i = 0; i < arr.length; i++){
+      if(arr[i] > greatest){
+        greatest = arr[i];
+      }
+    }
+    return greatest;
+  }
+
 }
