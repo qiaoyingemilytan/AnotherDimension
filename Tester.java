@@ -24,5 +24,6 @@ public class Tester{
     System.out.println(ArrayOps.sum(tester2dArray));
     System.out.println(arrToString(ArrayOps.sumCols(tester2dArray)));
     System.out.println(ArrayOps.isRowMagic(tester2dArray));
+    System.out.println(ArrayOps.isColMagic(tester2dArray));
   }
 }

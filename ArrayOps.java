@@ -62,4 +62,15 @@ public class ArrayOps{
     return same;
   }
 
+  public static boolean isColMagic(int[][] matrix){
+    int[] sumArray = sumCols(matrix);
+    boolean same = true;
+    for(int i = 0; i< sumArray.length-1; i++){
+      if(sumArray[i] != sumArray[i+1]){
+        same = false;
+      }
+    }
+    return same;
+  }
+
 }
