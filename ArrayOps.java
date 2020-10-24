@@ -37,12 +37,16 @@ public class ArrayOps{
     return sum(sumRows(arr));
   }
 
-  public static int[] sumCols(int[][]matrix){
-    int[] columnSums = new int[matrix.length];
-    for(int i = 0; i < matrix[0].length; i++){
-      for(int j = 0; j< matrix.length; i++){
-        columnSums[i] = matrix[i][j];
+  public static int[] sumCols(int[][] matrix){
+    int rows = matrix.length;
+    int cols = matrix[0].length;
+    int[] columnSums = new int[cols];
+    for(int i = 0; i < cols; i++){
+      int sums = 0;
+      for(int j = 0; j < rows; j++){
+        sums += matrix[j][i];
       }
+      columnSums[i] = sums;
     }
     return columnSums;
   }
